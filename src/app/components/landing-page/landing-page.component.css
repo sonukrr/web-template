@@ -1,0 +1,91 @@
+.background-image{
+   height: 100vh;
+   width: 100vw;
+    background: url("/assets/lock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.background-image__layer{
+    background-color: black;
+    opacity: 0.4;
+    width: 100vw;
+    height: 100vh; 
+    position: absolute;
+    top: 0px;
+    left: 0px;  
+   
+}
+ul{
+    z-index: 1;
+    list-style: none;
+ 
+}
+li{
+    display: inline-block;
+}
+
+a{
+text-decoration: none;
+color: white;
+
+}
+
+
+.header{
+    width: 100%;
+    display: flex;
+    /* on y axis */
+    align-items: center;
+    /* on x axis    */
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  
+}
+
+.header__brand{
+    float: left;
+    margin-right: 18rem;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+i{
+    vertical-align: top;
+    font-size: 20px;
+}
+.header__link{
+    font-size: 12px;
+    font-weight: 500;  
+    padding: 10px 10px;
+
+}
+
+.header__link:hover{
+    background:rgba(128, 128, 128, 0.39); 
+    border-radius: 0.5rem;
+}
+
+.footer{
+    position: absolute;
+    bottom: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__link{
+margin-right: 20px;
+font-size: 12px;
+font-weight: 500;  
+}
+.footer__creator-info{
+    
+    margin-left: 340px;
+    font-weight: 300;  
+
+    
+}
