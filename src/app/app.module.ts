@@ -7,7 +7,8 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { RegisterComponent } from './components/pages/register/register.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { LockComponent } from './components/pages/lock/lock.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatFormFieldModule, MatButtonModule,MatInputModule} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,11 @@ import { LockComponent } from './components/pages/lock/lock.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
