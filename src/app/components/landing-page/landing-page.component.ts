@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewChecked, AfterViewInit } from '@angular/core';
+import { LoginComponent } from '../pages/login/login.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -9,7 +10,12 @@ export class LandingPageComponent implements OnInit {
 
   constructor() { }
 
+  
   ngOnInit() {
+    
   }
+
+
+  
 
 }
