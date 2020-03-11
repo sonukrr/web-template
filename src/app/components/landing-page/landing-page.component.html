@@ -1,14 +1,16 @@
 <div class="container">
     <div class="row">
         <ul class="header">
-            <li class="header__brand"><a href=""> Material Dashboard Pro Angular</a></li>
-            <li class="header__link"><a href=""><i class="material-icons">dashboard</i> DASHBOARD</a></li>
-            <li class="header__link"><a href=""> <i class="material-icons">person_add</i> REGISTER</a></li>
-            <li class="header__link"><a href=""><i class="material-icons">fingerprint</i> LOGIN</a></li>
-            <li class="header__link"><a href=""><i class="material-icons">lock_open</i> LOCK</a></li>
+            <li class="header__brand"><a routerLink="/landing"> Material Dashboard Pro Angular</a></li>
+            <li class="header__link"><a routerLink="/landing/dashboard"><i class="material-icons">dashboard</i> DASHBOARD</a></li>
+            <li class="header__link"><a routerLink="/landing/register" > <i class="material-icons">person_add</i> REGISTER</a></li>
+            <li class="header__link"><a routerLink="/landing/login"><i class="material-icons">fingerprint</i> LOGIN</a></li>
+            <li class="header__link"><a routerLink="/landing/lock"><i class="material-icons">lock_open</i> LOCK</a></li>
         </ul>
     </div>
 </div>
+
+<router-outlet></router-outlet>
 <div class="background-image">
     <div class="background-image__layer">
 
