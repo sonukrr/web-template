@@ -9,13 +9,15 @@ import { LoginComponent } from './components/pages/login/login.component';
 import { LockComponent } from './components/pages/lock/lock.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule, MatButtonModule,MatInputModule} from '@angular/material';
+import { CardComponent } from './components/card/card.component';
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     RegisterComponent,
     LoginComponent,
-    LockComponent
+    LockComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

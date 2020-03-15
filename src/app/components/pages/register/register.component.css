@@ -1,10 +1,72 @@
 .container{
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    margin: 20px auto;
-    
+    position: relative; 
     z-index: 1;
-    color: white;
-    background: red;
+    background: white;
+    width: 70%;
+    margin-top: 20px;
+    border-radius: 8px;
+    height: 73%;
+    box-shadow: 8px 8px 8px 0px rgba(128, 128, 128, 0.678);
+   
+}
+
+.card-title{
+   color: #3c4858;
+   font-size: 36px;
+   font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+}
+.card-left
+{
+
+    padding: 0px 50px;
+}
+
+.card-right{
+    
+    padding: 0px 50px;
+}
+
+.group{
+
+}
+
+.title{
+    
+}
+
+.material-icons{
+    vertical-align: middle;
+    font-size:36.4px;
+    font-weight:400;
+    margin-right: 8px;
+
+}
+
+.icon1{
+    color:rgb(233, 30, 99);
+}
+
+.icon2{
+    color:rgb(156, 39, 176);
+}
+
+.icon3{
+    color:rgb(0, 188, 212);
+}
+.text{
+    display: inline-block;
+    vertical-align: middle;
+    color:rgb(60, 72, 88);
+    font-size:18px;
+    font-weight:300;
+}
+
+.description{
+    color:rgb(153, 153, 153);
+    font-size:14px;
+    line-height:24px;
+    margin-left: 44.4px;
+    margin-bottom: 20px;
 }

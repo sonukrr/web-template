@@ -1,0 +1,55 @@
+<div class="card" [ngClass]="{'register-card':isRegister}">
+    <div class="register-form-icons" *ngIf="isRegister">
+        <button class="icon ic1">
+            <i class="fa fa-twitter"></i>
+        </button>
+        <button class="icon ic2">
+            <i class="fa fa-dribbble"></i>
+        </button>
+
+        <button class="icon ic3">
+            <i class="fa fa-facebook"></i>
+        </button>
+    </div>
+
+    <div id="sub-card" class="inner_card" *ngIf="!isRegister">
+        <div class="card-title">{{cardTitle}}</div>
+        <div class="icons">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="subtitle" [ngClass]="{'register-subtitle':isRegister}">Or Be Classical</div>
+    <div class="card-content">
+        <div class="input_box"><i class="material-icons">face</i>
+            <input type="text" placeholder="First Name..." class="form-control">
+
+        </div>
+        <div class="input_box"><i class="material-icons">email</i>
+            <input type="email" placeholder="Email..." class="form-control">
+
+        </div>
+        <div class="input_box"><i class="material-icons">lock_outline</i>
+            <input type="password" placeholder="Password..." class="form-control">
+
+        </div>
+
+        <div *ngIf="isRegister" class="tnc">
+            <input type="checkbox">I Agree to <a href=""> Terms and Conditions</a>
+        </div>
+    </div>
+  
+        <div *ngIf="!isRegister else registerBtnBlock" class="footer">
+            <button>{{submitButtonText}}</button> </div>
+    
+  
+   
+    <ng-template #registerBtnBlock>
+        <div class="r-button">
+            <button href="#" class="register-btn">Get Started</button>
+        </div>
+    </ng-template>
+
+</div>

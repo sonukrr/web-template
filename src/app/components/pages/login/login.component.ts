@@ -7,7 +7,9 @@ import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit, AfterViewInit,OnDestroy {
 
-  constructor() { }
+  constructor() { 
+    
+  }
 
 
   ngOnInit() {
