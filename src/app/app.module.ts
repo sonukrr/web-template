@@ -10,6 +10,7 @@ import { LockComponent } from './components/pages/lock/lock.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule, MatButtonModule,MatInputModule} from '@angular/material';
 import { CardComponent } from './components/card/card.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { CardComponent } from './components/card/card.component';
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

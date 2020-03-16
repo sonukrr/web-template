@@ -4,6 +4,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { RegisterComponent } from './components/pages/register/register.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { LockComponent } from './components/pages/lock/lock.component';
+import { DashboardComponent } from './dashboard/components/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,11 @@ const routes: Routes = [
         pathMatch: 'full'
       }
     ]
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    pathMatch: 'full'
   }
 ];
 

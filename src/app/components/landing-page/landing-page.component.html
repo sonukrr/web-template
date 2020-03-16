@@ -1,8 +1,11 @@
+<div #landingPageDom>
+
+
 <div class="container">
     <div class="row">
         <ul class="header">
             <li class="header__brand"><a routerLink="/landing"> Material Dashboard Pro Angular</a></li>
-            <li class="header__link"><a routerLink="/landing/dashboard"><i class="material-icons">dashboard</i> DASHBOARD</a></li>
+            <li class="header__link"><a (click)="onDashboardClick()"><i class="material-icons">dashboard</i> DASHBOARD</a></li>
             <li class="header__link"><a routerLink="/landing/register" > <i class="material-icons">person_add</i> REGISTER</a></li>
             <li class="header__link"><a routerLink="/landing/login"><i class="material-icons">fingerprint</i> LOGIN</a></li>
             <li class="header__link"><a routerLink="/landing/lock"><i class="material-icons">lock_open</i> LOCK</a></li>
@@ -25,5 +28,6 @@
     <li class="footer__link"> <a href=""> LICENSES</a></li>
     <li class="footer__creator-info"> <a href=""> &copy; 2020, made with &hearts; by Sonu Kumar for a better web.</a></li>
 </ul>
+</div>
 </div>
 </div>

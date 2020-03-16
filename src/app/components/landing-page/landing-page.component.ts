@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild, AfterViewChecked, AfterViewInit } from '@angular/core';
-import { LoginComponent } from '../pages/login/login.component';
+import { Component, OnInit, ViewChild, AfterViewChecked, AfterViewInit, Output, ElementRef, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-landing-page',
@@ -8,6 +8,12 @@ import { LoginComponent } from '../pages/login/login.component';
 })
 export class LandingPageComponent implements OnInit {
 
+  @Output()
+  dashboardClick:EventEmitter<string>= new EventEmitter();
+
+  @ViewChild('landingPageDom', {static: false})
+  landingPageDom:ElementRef;
+
   constructor() { }
 
   
@@ -15,6 +21,10 @@ export class LandingPageComponent implements OnInit {
     
   }
 
+  onDashboardClick(){
+    this.landingPageDom.nativeElement.remove();
+    this.dashboardClick.emit("true");
+  }
 
   
 

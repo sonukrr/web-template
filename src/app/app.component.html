@@ -1,3 +1,6 @@
 
-  <app-landing-page></app-landing-page>
-  
+  <app-landing-page (dashboardClick)="onDashboardClick($event)"></app-landing-page>
+  <div *ngIf="isDashboard">
+    <app-dashboard></app-dashboard>
+  </div>
+ 
