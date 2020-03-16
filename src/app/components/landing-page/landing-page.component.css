@@ -44,6 +44,12 @@ a {
     color: white;
 }
 
+a:not([href]):hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .header {
     width: 100%;
     display: flex;

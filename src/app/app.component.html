@@ -1,6 +1,7 @@
 
-  <app-landing-page (dashboardClick)="onDashboardClick($event)"></app-landing-page>
+  <app-landing-page *ngIf="!isDashboard" (dashboardClick)="onDashboardClick($event)"></app-landing-page>
   <div *ngIf="isDashboard">
-    <app-dashboard></app-dashboard>
+    <router-outlet></router-outlet>
+    
   </div>
  
