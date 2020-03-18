@@ -92,7 +92,7 @@
                         <div class="left-nav">
                             <ul class="left-nav__items mini-nav-items">
                                 <li class="left-nav__item mini-nav-item">
-                                    <a href="">
+                                    <a  [routerLink]="[{ outlets: { dash: ['regular-forms'] } }]">
                                         <div class="group">
                                             <div class="text-icon">RF</div>
                                             <div class="title"> Regular Forms</div>
@@ -100,7 +100,7 @@
                                     </a>
                                 </li>
                                 <li class="left-nav__item mini-nav-item">
-                                    <a href="">
+                                    <a [routerLink]="[{ outlets: { dash: ['extended-forms'] } }]">
                                         <div class="group">
                                             <div class="text-icon">EF</div>
                                             <div class="title"> Extended Forms</div>
@@ -108,7 +108,7 @@
                                     </a>
                                 </li>
                                 <li class="left-nav__item mini-nav-item">
-                                    <a href="">
+                                    <a [routerLink]="[{ outlets: { dash: ['validation-forms'] } }]">
                                         <div class="group">
                                             <div class="text-icon">VF</div>
                                             <div class="title"> Validation Forms</div>
@@ -136,7 +136,7 @@
                         <div class="left-nav">
                             <ul class="left-nav__items mini-nav-items">
                                 <li class="left-nav__item mini-nav-item">
-                                    <a href="">
+                                    <a [routerLink]="[{ outlets: { dash: ['regular-tables'] } }]">
                                         <div class="group">
                                             <div class="text-icon">RT</div>
                                             <div class="title"> Regular Tables</div>
@@ -144,7 +144,7 @@
                                     </a>
                                 </li>
                                 <li class="left-nav__item mini-nav-item">
-                                    <a href="">
+                                    <a [routerLink]="[{ outlets: { dash: ['extended-tables'] } }]">
                                         <div class="group">
                                             <div class="text-icon">ET</div>
                                             <div class="title"> Extended Tables</div>
@@ -152,7 +152,7 @@
                                     </a>
                                 </li>
                                 <li class="left-nav__item mini-nav-item">
-                                    <a href="">
+                                    <a [routerLink]="[{ outlets: { dash: ['data-tables'] } }]">
                                         <div class="group">
                                             <div class="text-icon">DT</div>
                                             <div class="title"> Data Tables</div>
@@ -163,19 +163,19 @@
                         </div>
                     </div>
                     <li class="left-nav__item">
-                        <a href="">
+                        <a [routerLink]="[{ outlets: { dash: ['charts'] } }]">
                             <i class="material-icons">timeline</i>
                             <span class="title"> Charts</span>
                         </a>
                     </li>
                     <li class="left-nav__item">
-                        <a href="">
+                        <a [routerLink]="[{ outlets: { dash: ['widgets'] } }]">
                             <i class="material-icons">widgets</i>
                             <span class="title"> Widgets</span>
                         </a>
                     </li>
                     <li class="left-nav__item">
-                        <a href="">
+                        <a [routerLink]="[{ outlets: { dash: ['maps'] } }]">
                             <i class="material-icons">place</i>
                             <span class="title"> Maps</span>
                         </a>
@@ -186,7 +186,8 @@
             </div>
         </div>
         <div class="main-content">
-            main content
+            <app-dash-nav [title]="title"></app-dash-nav>
+            <router-outlet name='dash'></router-outlet>
         </div>
     </div>
 </div>

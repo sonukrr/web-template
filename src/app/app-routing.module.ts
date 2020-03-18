@@ -35,8 +35,8 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component: DashboardComponent,
-    pathMatch: 'full'
+    redirectTo:'/dashboard',
+    pathMatch:'full'
   }
 ];
 
