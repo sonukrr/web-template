@@ -1,1 +1,45 @@
-<p>{{title}}  dash-nav works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <div class="collapse-icon">
+                <a (click)="collapseSideNav()">
+                    <i class="material-icons toggle-icon">more_vert</i>
+                </a>
+            </div>
+            <div class="page-title">
+                <a href="/dashboard">
+                    {{title}}
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6 push-right">
+            <div class="search-bar">
+                <input type="text" placeholder="search...">
+                <a href="#" class="search-icon">
+                    <span class="material-icons">
+                        search
+                    </span>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <i class="material-icons">dashboard</i>
+                </a>
+            </div>
+
+            <div>
+                <a href="/dashboard">
+                    <i class="material-icons">notifications</i>
+                    <span class="notification-count">5</span>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <i class="material-icons">person</i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

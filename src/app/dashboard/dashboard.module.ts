@@ -13,6 +13,7 @@ import { ChartsComponent } from './components/charts/charts.component';
 import { MapsComponent } from './components/maps/maps.component';
 import { WidgetsComponent } from './components/widgets/widgets.component';
 import { DashNavComponent } from './containers/dash-nav/dash-nav.component';
+import { MatInputModule, MatFormFieldModule } from '@angular/material';
 
 
 
@@ -20,7 +21,9 @@ import { DashNavComponent } from './containers/dash-nav/dash-nav.component';
   declarations: [DashboardComponent, RegularFormsComponent, ExtendedFormsComponent, ValidationFormsComponent, RegularTablesComponent, ExtendedTablesComponent, DataTablesComponent, ChartsComponent, MapsComponent, WidgetsComponent, DashNavComponent],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   exports:[DashboardComponent]
 })

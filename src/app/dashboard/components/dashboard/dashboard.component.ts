@@ -8,8 +8,9 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-  title:string="Regular Forms";
+  title:string="Dashboard";
 
+  
   constructor(private router:Router) { 
     router.events.subscribe(val => {
       if(val instanceof NavigationEnd){
@@ -47,6 +48,19 @@ export class DashboardComponent implements OnInit {
  
   ngOnInit() {
 
+  }
+
+  collapseSideNav(event){
+    if(event==='true'){
+    document.querySelector('.sidebar').style.width='100px';
+    document.querySelector('.main-content').style.marginLeft="100px";
+    document.querySelectorAll('.hide-me').forEach(e=> e.hidden=true);
+  }
+  else{
+    document.querySelectorAll('.hide-me').forEach(e => e.hidden=false);
+    document.querySelector('.sidebar').style.width='20%';
+    document.querySelector('.main-content').style.marginLeft="20%";
+  }
   }
 
 

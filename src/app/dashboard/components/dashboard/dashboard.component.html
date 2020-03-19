@@ -4,7 +4,7 @@
             <div class="title">
                 <img
                     src="https://demos.creative-tim.com/material-dashboard-pro-angular2/assets/img/angular2-logo-white.png">
-                <a href="">CREATIVE SONU</a>
+                <a href="" class="hide-me">CREATIVE SONU</a>
             </div>
             <hr>
             <div class="user-details">
@@ -14,10 +14,10 @@
                     <div class="photo">
                         <img src="assets/avatar.jpg" alt="">
                     </div>
-                    <div class="name">
+                    <div class="name hide-me">
                         Tania Andrew
                     </div>
-                    <div class="icons">
+                    <div class="icons hide-me">
                         <i class="material-icons">
                             arrow_drop_down
                         </i>
@@ -36,7 +36,7 @@
                             <a href="">
                                 <div class="group">
                                     <div class="text-icon">MP</div>
-                                    <div class="title"> My Profile</div>
+                                    <div class="title hide-me"> My Profile</div>
                                 </div>
                             </a>
                         </li>
@@ -44,7 +44,7 @@
                             <a href="">
                                 <div class="group">
                                     <div class="text-icon">EP</div>
-                                    <div class="title"> Edit Profile</div>
+                                    <div class="title hide-me"> Edit Profile</div>
                                 </div>
                             </a>
                         </li>
@@ -52,7 +52,7 @@
                             <a href="">
                                 <div class="group">
                                     <div class="text-icon">S</div>
-                                    <div class="title"> Settings</div>
+                                    <div class="title hide-me"> Settings</div>
                                 </div>
                             </a>
                         </li>
@@ -67,7 +67,7 @@
                         <a href="">
                             <div class="group">
                             <i class="material-icons">dashboard</i>
-                            <span class="title"> Dashboard</span>
+                            <span class="title hide-me"> Dashboard</span>
                         </div>
                         </a>
                     </li>
@@ -78,8 +78,8 @@
 
                             
                             <div class="material-icons">content_paste</div>
-                            <div class="title"> Forms</div>
-                            <div class="caret-icons">
+                            <div class="title hide-me"> Forms</div>
+                            <div class="caret-icons hide-me">
                                 <i class="material-icons">
                                     arrow_drop_down
                                 </i>
@@ -95,7 +95,7 @@
                                     <a  [routerLink]="[{ outlets: { dash: ['regular-forms'] } }]">
                                         <div class="group">
                                             <div class="text-icon">RF</div>
-                                            <div class="title"> Regular Forms</div>
+                                            <div class="title hide-me"> Regular Forms</div>
                                         </div>
                                     </a>
                                 </li>
@@ -103,7 +103,7 @@
                                     <a [routerLink]="[{ outlets: { dash: ['extended-forms'] } }]">
                                         <div class="group">
                                             <div class="text-icon">EF</div>
-                                            <div class="title"> Extended Forms</div>
+                                            <div class="title hide-me"> Extended Forms</div>
                                         </div>
                                     </a>
                                 </li>
@@ -111,7 +111,7 @@
                                     <a [routerLink]="[{ outlets: { dash: ['validation-forms'] } }]">
                                         <div class="group">
                                             <div class="text-icon">VF</div>
-                                            <div class="title"> Validation Forms</div>
+                                            <div class="title hide-me"> Validation Forms</div>
                                         </div>
                                     </a>
                                 </li>
@@ -122,8 +122,8 @@
                         <a href="" class="arrow-down" data-toggle="collapse" href="#collapseTable" aria-expanded="false"
                             aria-controls="collapseTable">
                             <i class="material-icons">grid_on</i>
-                            <span class="title"> Tables</span>
-                            <div class="caret-icons">
+                            <span class="title hide-me"> Tables</span>
+                            <div class="caret-icons hide-me">
                                 <i class="material-icons">
                                     arrow_drop_down
                                 </i>
@@ -139,7 +139,7 @@
                                     <a [routerLink]="[{ outlets: { dash: ['regular-tables'] } }]">
                                         <div class="group">
                                             <div class="text-icon">RT</div>
-                                            <div class="title"> Regular Tables</div>
+                                            <div class="title hide-me"> Regular Tables</div>
                                         </div>
                                     </a>
                                 </li>
@@ -147,7 +147,7 @@
                                     <a [routerLink]="[{ outlets: { dash: ['extended-tables'] } }]">
                                         <div class="group">
                                             <div class="text-icon">ET</div>
-                                            <div class="title"> Extended Tables</div>
+                                            <div class="title hide-me"> Extended Tables</div>
                                         </div>
                                     </a>
                                 </li>
@@ -155,7 +155,7 @@
                                     <a [routerLink]="[{ outlets: { dash: ['data-tables'] } }]">
                                         <div class="group">
                                             <div class="text-icon">DT</div>
-                                            <div class="title"> Data Tables</div>
+                                            <div class="title hide-me"> Data Tables</div>
                                         </div>
                                     </a>
                                 </li>
@@ -165,19 +165,19 @@
                     <li class="left-nav__item">
                         <a [routerLink]="[{ outlets: { dash: ['charts'] } }]">
                             <i class="material-icons">timeline</i>
-                            <span class="title"> Charts</span>
+                            <span class="title hide-me"> Charts</span>
                         </a>
                     </li>
                     <li class="left-nav__item">
                         <a [routerLink]="[{ outlets: { dash: ['widgets'] } }]">
                             <i class="material-icons">widgets</i>
-                            <span class="title"> Widgets</span>
+                            <span class="title hide-me"> Widgets</span>
                         </a>
                     </li>
                     <li class="left-nav__item">
                         <a [routerLink]="[{ outlets: { dash: ['maps'] } }]">
                             <i class="material-icons">place</i>
-                            <span class="title"> Maps</span>
+                            <span class="title hide-me"> Maps</span>
                         </a>
                     </li>
 
@@ -186,7 +186,7 @@
             </div>
         </div>
         <div class="main-content">
-            <app-dash-nav [title]="title"></app-dash-nav>
+            <app-dash-nav [title]="title" (isCollapseSideNav)="collapseSideNav($event)"></app-dash-nav>
             <router-outlet name='dash'></router-outlet>
         </div>
     </div>
