@@ -19,16 +19,16 @@ export class DashNavComponent implements OnInit {
   ngOnInit() {
   }
   collapseSideNav() {
-    const iconName =document.querySelector('.toggle-icon').innerText;
+    const iconName = (<HTMLElement> document.querySelector('.toggle-icon')).innerText;
 
     if(iconName === 'more_vert')
     {
     this.isCollapseSideNav.emit('true');
-    document.querySelector('.toggle-icon').innerText='view_list';
+   (<HTMLElement> document.querySelector('.toggle-icon')).innerText='view_list';
     }
     else{
       this.isCollapseSideNav.emit('false');
-      document.querySelector('.toggle-icon').innerText='more_vert';
+      (<HTMLElement> document.querySelector('.toggle-icon')).innerText='more_vert';
 
     }
   }

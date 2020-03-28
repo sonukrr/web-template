@@ -13,17 +13,19 @@ import { ChartsComponent } from './components/charts/charts.component';
 import { MapsComponent } from './components/maps/maps.component';
 import { WidgetsComponent } from './components/widgets/widgets.component';
 import { DashNavComponent } from './containers/dash-nav/dash-nav.component';
-import { MatInputModule, MatFormFieldModule } from '@angular/material';
+import { MatInputModule, MatFormFieldModule, MatTableModule } from '@angular/material';
+import { DashContentComponent } from './components/dash-content/dash-content.component';
 
 
 
 @NgModule({
-  declarations: [DashboardComponent, RegularFormsComponent, ExtendedFormsComponent, ValidationFormsComponent, RegularTablesComponent, ExtendedTablesComponent, DataTablesComponent, ChartsComponent, MapsComponent, WidgetsComponent, DashNavComponent],
+  declarations: [DashboardComponent, RegularFormsComponent, ExtendedFormsComponent, ValidationFormsComponent, RegularTablesComponent, ExtendedTablesComponent, DataTablesComponent, ChartsComponent, MapsComponent, WidgetsComponent, DashNavComponent, DashContentComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTableModule
   ],
   exports:[DashboardComponent]
 })

@@ -52,14 +52,14 @@ export class DashboardComponent implements OnInit {
 
   collapseSideNav(event){
     if(event==='true'){
-    document.querySelector('.sidebar').style.width='100px';
-    document.querySelector('.main-content').style.marginLeft="100px";
-    document.querySelectorAll('.hide-me').forEach(e=> e.hidden=true);
+    (<HTMLElement> document.querySelector('.sidebar')).style.width='100px';
+    (<HTMLElement> document.querySelector('.main-content')).style.marginLeft="100px";
+    document.querySelectorAll('.hide-me').forEach((e:HTMLElement)=> e.hidden=true);
   }
   else{
-    document.querySelectorAll('.hide-me').forEach(e => e.hidden=false);
-    document.querySelector('.sidebar').style.width='20%';
-    document.querySelector('.main-content').style.marginLeft="20%";
+    document.querySelectorAll('.hide-me').forEach((e:HTMLElement)=> e.hidden=false);
+    (<HTMLElement> document.querySelector('.sidebar')).style.width='20%';
+    (<HTMLElement> document.querySelector('.main-content')).style.marginLeft="20%";
   }
   }
 

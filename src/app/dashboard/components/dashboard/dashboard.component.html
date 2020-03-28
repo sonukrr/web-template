@@ -64,11 +64,11 @@
             <div class="left-nav">
                 <ul class="left-nav__items">
                     <li class="left-nav__item">
-                        <a href="">
+                        <a [routerLink]="[{ outlets: { dash: ['dash-content'] } }]">
                             <div class="group">
-                            <i class="material-icons">dashboard</i>
-                            <span class="title hide-me"> Dashboard</span>
-                        </div>
+                                <i class="material-icons">dashboard</i>
+                                <span class="title hide-me"> Dashboard</span>
+                            </div>
                         </a>
                     </li>
                     <li class="left-nav__item">
@@ -76,23 +76,23 @@
                             aria-controls="collapseForm">
                             <div class="group">
 
-                            
-                            <div class="material-icons">content_paste</div>
-                            <div class="title hide-me"> Forms</div>
-                            <div class="caret-icons hide-me">
-                                <i class="material-icons">
-                                    arrow_drop_down
-                                </i>
 
+                                <div class="material-icons">content_paste</div>
+                                <div class="title hide-me"> Forms</div>
+                                <div class="caret-icons hide-me">
+                                    <i class="material-icons">
+                                        arrow_drop_down
+                                    </i>
+
+                                </div>
                             </div>
-                        </div>
                         </a>
                     </li>
                     <div class="collapse" id="collapseForm">
                         <div class="left-nav">
                             <ul class="left-nav__items mini-nav-items">
                                 <li class="left-nav__item mini-nav-item">
-                                    <a  [routerLink]="[{ outlets: { dash: ['regular-forms'] } }]">
+                                    <a [routerLink]="[{ outlets: { dash: ['regular-forms'] } }]">
                                         <div class="group">
                                             <div class="text-icon">RF</div>
                                             <div class="title hide-me"> Regular Forms</div>

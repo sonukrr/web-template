@@ -1,0 +1,49 @@
+.card{
+    margin-top: 2rem;
+    width: 100%;
+}
+.card-icon{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(60deg,#66bb6a,#43a047);
+    position: relative;
+    bottom: 20px;
+    left: 15px;
+
+}
+
+.card-title
+{
+position: absolute;
+left: 90px;
+top: 10px;
+font-size: 18px;
+font-weight: 300;
+
+
+
+}
+table td{
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+}
+.card-body{
+
+}
+.card-content{
+    
+}
+svg path{
+    transition: all 1s;
+
+  
+}
+svg path:hover{
+    fill: red;
+    cursor: pointer;
+     transform: translate(3px, 3px);
+}

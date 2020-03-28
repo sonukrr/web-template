@@ -10,6 +10,7 @@ import { RegularTablesComponent } from './components/regular-tables/regular-tabl
 import { ValidationFormsComponent } from './components/validation-forms/validation-forms.component';
 import { ExtendedFormsComponent } from './components/extended-forms/extended-forms.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { DashContentComponent } from './components/dash-content/dash-content.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,12 @@ const routes: Routes = [
     component:DashboardComponent,
     children: [
       {
+        path: 'dash-content',
+        component: DashContentComponent,
+        pathMatch: 'full',
+        outlet: 'dash'
+      }
+      ,{
         path: 'regular-forms',
         component: RegularFormsComponent,
         pathMatch: 'full',
