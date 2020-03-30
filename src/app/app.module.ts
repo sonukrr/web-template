@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule, MatButtonModule,MatInputModule} from '@angular/material';
 import { CardComponent } from './components/card/card.component';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { WorldMapComponent } from './dashboard/d3js/world-map/world-map.component';
 @NgModule({
   declarations: [
     AppComponent,

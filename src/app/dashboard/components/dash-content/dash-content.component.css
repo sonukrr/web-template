@@ -31,19 +31,71 @@ table td{
     border: none;
     border-bottom: 1px solid rgba(128, 128, 128, 0.247);
 }
-.card-body{
 
+.chart-cards{
+    display: flex;
+    justify-content: space-between;
 }
-.card-content{
+
+
+
+.chart-cards .chart-card{
+    width: 350px;
     
 }
-svg path{
-    transition: all 1s;
 
-  
+.chart-cards .chart-card .chart-card-graph:hover{
+    animation-name: pullUp;
+    animation-duration: 1s;
+    
 }
-svg path:hover{
-    fill: red;
-    cursor: pointer;
-     transform: translate(3px, 3px);
+.chart-cards .chart-card .chart-card-graph{
+    width: 330px;
+    height: 150px;
+    background: red;
+    border-radius: 0.5rem;
+    margin: auto;
+    position: relative;
+    bottom: 20px;
 }
+.chart-cards .chart-card .card-body{
+  padding-bottom: 3px;
+}
+
+.chart-cards .chart-card .card-body .title{
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+.chart-cards .chart-card .card-body .content{
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+hr{
+    margin-bottom: 0rem;
+}
+.footer .material-icons{
+    font-size: 15px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.footer{
+    padding-left: 15px;
+    color: grey;
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+@keyframes pullUp {
+    from {
+       bottom: 20px;
+    }
+    to {
+        bottom: 40px;
+    }
+  }
