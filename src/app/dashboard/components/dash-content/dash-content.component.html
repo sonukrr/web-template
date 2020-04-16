@@ -89,7 +89,7 @@
     <div class="row chart-cards">
         <div class="card chart-card">
             <div class="chart-card-graph">
-            
+
             </div>
             <div class="card-body">
                 <div class="title">
@@ -99,23 +99,23 @@
                     Last Campaign Performance
                 </div>
                 <hr>
-               
+
             </div>
             <div class="footer">
                 <div class="icon">
                     <i class="material-icons">access_time</i>
                 </div>
                 <div>
-                campaign sent 2 days ago
+                    campaign sent 2 days ago
                 </div>
             </div>
-           
+
 
         </div>
 
         <div class="card chart-card">
             <div class="chart-card-graph">
-            
+
             </div>
             <div class="card-body">
                 <div class="title">
@@ -125,23 +125,23 @@
                     increase in todays sale
                 </div>
                 <hr>
-               
+
             </div>
             <div class="footer">
                 <div class="icon">
                     <i class="material-icons">access_time</i>
                 </div>
                 <div>
-                updated 4 minutes ago
+                    updated 4 minutes ago
                 </div>
             </div>
-           
+
 
         </div>
 
         <div class="card chart-card">
             <div class="chart-card-graph">
-            
+
             </div>
             <div class="card-body">
                 <div class="title">
@@ -151,21 +151,128 @@
                     Last Campaign Performance
                 </div>
                 <hr>
-               
+
             </div>
             <div class="footer">
                 <div class="icon">
                     <i class="material-icons">access_time</i>
                 </div>
                 <div>
-                campaign sent 2 days ago
+                    campaign sent 2 days ago
                 </div>
             </div>
-           
+
 
         </div>
 
-        
+
     </div>
+
+    <div class="card-deck">
+        <div class="card stats-card">
+            <div class="icon-content">
+                <div class="card-icon stats-card-icon"><i class="material-icons">weekend</i></div>
+
+                <div class="stats-card-counts">
+                    <p>Bookings</p>
+                    <div class="card-count">184</div>
+
+                </div>
+
+            </div>
+
+
+            <hr>
+            <div class="footer">
+                <div class="icon">
+                    <i class="material-icons text-danger">warning</i> </div>
+                <div>
+                    get more space
+                </div>
+            </div>
+        </div>
+
+        <div class="card stats-card">
+            <div class="icon-content">
+                <div class="card-icon stats-card-icon equalizer-icon"><i class="material-icons">equalizer</i></div>
+
+                <div class="stats-card-counts">
+                    <p>Website visits</p>
+                    <div class="card-count">75.521</div>
+
+                </div>
+
+            </div>
+
+
+            <hr>
+            <div class="footer">
+                <div class="icon">
+                    <i class="material-icons text-danger">local_offer</i> </div>
+                <div>
+                    tracked from google analytics
+                </div>
+            </div>
+        </div>
+
+        <div class="card stats-card">
+            <div class="icon-content">
+                <div class="card-icon stats-card-icon store-icon"><i class="material-icons">store</i></div>
+
+                <div class="stats-card-counts">
+                    <p>Revenue</p>
+                    <div class="card-count">$34,525</div>
+
+                </div>
+
+            </div>
+
+
+            <hr>
+            <div class="footer">
+                <div class="icon">
+                    <i class="material-icons text-danger">date_range</i> </div>
+                <div>
+                    last 24 hours
+                </div>
+            </div>
+        </div>
+
+        <div class="card stats-card">
+            <div class="icon-content">
+                <div class="card-icon stats-card-icon twitter-icon"><i class="fa fa-twitter"></i></div>
+
+                <div class="stats-card-counts">
+                    <p>Followers</p>
+                    <div class="card-count">+245</div>
+
+                </div>
+
+            </div>
+
+
+            <hr>
+            <div class="footer">
+                <div class="icon">
+                    <i class="material-icons text-danger">update</i> </div>
+                <div>
+                    just updated
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div>
+        <div class="listing-title">Manage Listings</div>
+        <div class="card-deck" style="justify-content: space-between;">
+            <div *ngFor="let cardData of listCarddata; let i=index">
+                <app-list-type-card [data]="cardData" [isLastCard]="i==2?true:false" [isSecondCard]="i==1"></app-list-type-card>
+            </div>
+        </div>
+    </div>
+
 
 </div>

@@ -1,0 +1,31 @@
+<div class="card h-100" [ngClass]="{'card-adjust':isLastCard}">
+    <div class="card-body">
+        <div class="card-image">
+            <img width="310" height="200" [src]="data.image" alt="">
+        </div>
+
+        <div class="card-title text-center">
+            <a href="">
+                {{data.title}}
+            </a>
+        </div>
+        <div class="card-desc">
+            {{data.desc}}
+        </div>
+        <div [ngClass]="{'footer-adjust':isSecondCard}">
+            <hr>
+            <div class="footer" >
+                <div class="price">
+                    $ {{data.charges}}/night
+                </div>
+                <div class="location">
+                    <i class="material-icons">place</i>
+                    {{data.location}}
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</div>

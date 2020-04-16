@@ -33,7 +33,7 @@ table td{
 }
 
 .chart-cards{
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
 }
 
@@ -91,6 +91,17 @@ hr{
     align-items: flex-start;
 }
 
+.card-deck{
+    margin-top: 2rem;
+}
+
+.card-deck .card:nth-child(1){
+  margin-left: 0px;
+}
+.card-deck .card:nth-child(4){
+    margin-right: 0px;
+  }
+
 @keyframes pullUp {
     from {
        bottom: 20px;
@@ -99,3 +110,69 @@ hr{
         bottom: 40px;
     }
   }
+
+.stats-card .stats-card-icon{
+    background:linear-gradient(60deg,#ffa726,#fb8c00);
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(218, 151, 27, 0.753);
+    width: 90px;
+    height: 90px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-card .stats-card-icon .material-icons{
+    font-size: 40px;
+}
+.stats-card .stats-card-counts{
+
+
+}
+
+.icon-content{
+    display:flex;
+    justify-content: space-between;
+}
+.stats-card-icon{
+   
+}
+.stats-card-counts{
+    padding: 10px;
+    
+}
+.stats-card-counts p{
+    color: grey;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+.card-count{
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 35px;
+    float: right;
+}
+.card-icon.stats-card-icon.equalizer-icon
+{
+    background:  linear-gradient(60deg, rgb(236, 64, 122), rgb(216, 27, 96)) ;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(233,30,99,.4);
+}
+.card-icon.stats-card-icon.store-icon{
+    background: linear-gradient(60deg, rgb(102, 187, 106), rgb(67, 160, 71));
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgb(67, 160, 71,.4);
+}
+.card-icon.stats-card-icon.twitter-icon{
+    background: linear-gradient(60deg,#26c6da,#00acc1);
+    font-size: 40px;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(66, 178, 212, 0.658);
+    
+}
+
+.listing-title{
+    color: black;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+

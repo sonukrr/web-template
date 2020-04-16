@@ -6,7 +6,7 @@ import { Router, NavigationEnd } from '@angular/router';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent implements OnInit,AfterViewChecked {
 
   title:string="Dashboard";
 
@@ -46,6 +46,7 @@ export class DashboardComponent implements OnInit {
     
    }
  
+ 
   ngOnInit() {
 
   }
@@ -64,6 +65,9 @@ export class DashboardComponent implements OnInit {
   }
 
 
+  ngAfterViewChecked(): void {
+  //  this.router.navigate(['(dash:dash-content)']); 
+  }
 
 
   

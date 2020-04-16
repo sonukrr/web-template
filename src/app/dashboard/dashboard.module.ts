@@ -20,6 +20,7 @@ import {
 } from "@angular/material";
 import { DashContentComponent } from "./components/dash-content/dash-content.component";
 import { WorldMapComponent } from "./d3js/world-map/world-map.component";
+import { ListTypeCardComponent } from './containers/list-type-card/list-type-card.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { WorldMapComponent } from "./d3js/world-map/world-map.component";
     WidgetsComponent,
     DashNavComponent,
     DashContentComponent,
-    WorldMapComponent
+    WorldMapComponent,
+    ListTypeCardComponent
   ],
   imports: [
     CommonModule,
